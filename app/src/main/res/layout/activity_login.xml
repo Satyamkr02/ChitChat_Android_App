@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/iv_login_illustraion_LoginActivity"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/login_illustration" />
+
+    <TextView
+        android:id="@+id/tv_login_LoginActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/sf_pro_black"
+        android:text="Login"
+        android:textColor="@color/primary_blue"
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_login_illustraion_LoginActivity" />
+
+
+    <ImageView
+        android:id="@+id/iv_email_icon_LoginActivity"
+        android:layout_width="35dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/email_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_login_LoginActivity" />
+
+    <EditText
+        android:id="@+id/et_email_LoginActivity"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/edit_text_custom_shape"
+        android:fontFamily="@font/sf_pro"
+        android:hint="Email  ID"
+        android:paddingStart="20dp"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/primary_blue"
+        android:shadowDy="5"
+        android:shadowColor="@color/black"
+        android:elevation="3dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_email_icon_LoginActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_email_icon_LoginActivity"
+        app:layout_constraintTop_toTopOf="@+id/iv_email_icon_LoginActivity" />
+
+
+
+    <ImageView
+        android:id="@+id/iv_password_icon_LoginActivity"
+        android:layout_width="35dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/password_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_email_icon_LoginActivity" />
+
+    <EditText
+        android:id="@+id/et_password_LoginActivity"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/edit_text_custom_shape"
+        android:fontFamily="@font/sf_pro"
+        android:hint="Password"
+        android:paddingStart="20dp"
+        android:inputType="textPassword"
+        android:textColor="@color/primary_blue"
+        android:shadowDy="5"
+        android:shadowColor="@color/black"
+        android:elevation="3dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_password_icon_LoginActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_password_icon_LoginActivity"
+        app:layout_constraintTop_toTopOf="@+id/iv_password_icon_LoginActivity" />
+
+    <TextView
+        android:id="@+id/tv_forgot_password_LoginActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sf_pro"
+        android:layout_marginTop="10dp"
+        android:text="Forgot Password ?"
+        android:textColor="@color/primary_blue"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/et_password_LoginActivity"
+        app:layout_constraintTop_toBottomOf="@+id/et_password_LoginActivity" />
+
+    <Button
+        android:id="@+id/btn_login_LoginActivity"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/primary_blue"
+        android:fontFamily="@font/inter_variable"
+        android:text="Login"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        app:circularflow_defaultRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_forgot_password_LoginActivity" />
+
+    <TextView
+        android:id="@+id/tv_new_toChitChat_LoginActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:fontFamily="@font/sf_pro"
+        android:text="New to ChitChat?"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login_LoginActivity"
+        app:layout_constraintVertical_bias="0.507" />
+
+    <TextView
+        android:id="@+id/tv_register_LoginActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:fontFamily="@font/sf_pro"
+        android:text="Register"
+        android:textColor="@color/primary_blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_new_toChitChat_LoginActivity"
+        app:layout_constraintStart_toEndOf="@+id/tv_new_toChitChat_LoginActivity"
+        app:layout_constraintTop_toTopOf="@+id/tv_new_toChitChat_LoginActivity" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

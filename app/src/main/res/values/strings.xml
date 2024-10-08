@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ChitChat</string>
+
+
+    <!-- In styles.xml -->
+    <style name="CustomTabLayoutTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:fontFamily">@font/sf_pro</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>
